@@ -7,12 +7,19 @@ public class UserInput {
             Scanner myScanner = new Scanner(System.in);
 
             System.out.println("Enter your name: ");
-            String fname = myScanner.nextLine();
+            String name = myScanner.nextLine();
+
+            System.out.println("How old are you?");
+            int age = myScanner.nextInt();
+            myScanner.nextLine();
 
             System.out.println("Enter your fav food: ");
             String food = myScanner.nextLine();
 
-            System.out.println("Hello " + fname + "\nYour fav food is " + food );
+            System.out.println("\nHello " + name);
+            System.out.println("Your age is " + age);
+            System.out.println("Your fav food is " + food );
+
 
         }
 }
